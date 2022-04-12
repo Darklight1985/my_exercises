@@ -10,6 +10,7 @@ import java.util.stream.Collector;
 
 
 public class CollectorArithmetic {
+
     public static Integer collect(List<Integer> list) {
         Supplier<List<Integer>> supplier = LinkedList::new;
         BiConsumer<List<Integer>, Integer> consumer = List::add;
