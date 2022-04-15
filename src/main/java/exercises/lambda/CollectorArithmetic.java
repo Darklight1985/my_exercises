@@ -13,7 +13,6 @@ public class CollectorArithmetic {
 
     public static Integer collect(List<Integer> list) {
         Supplier<List<Integer>> supplier = LinkedList::new;
-
         BiConsumer<List<Integer>, Integer> consumer = List::add;
         BinaryOperator<List<Integer>> merger = (xs, ys) -> {
             xs.addAll(ys);
